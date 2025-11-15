@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | DevOps Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        :root {
+            --primary: #48bb78;
+            --secondary: #2d3748;
+            --background: #f7fafc;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background); margin: 0; padding: 0; color: #1a202c; }
+        .app-container { max-width: 800px; width: 95%; margin: 40px auto; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); overflow: hidden; border-top: 5px solid var(--primary); }
+        .nav-bar { display: flex; justify-content: space-around; background-color: var(--secondary); }
+        .nav-bar a { flex-grow: 1; padding: 15px 10px; text-decoration: none; color: white; font-weight: 700; text-align: center; transition: background-color 0.3s; }
+        .nav-bar a:hover:not(.active) { background-color: rgba(255, 255, 255, 0.15); }
+        .nav-bar a.active { background-color: var(--primary); color: var(--secondary); pointer-events: none; }
+        .content { padding: 40px; text-align: left; }
+        h1 { color: var(--primary); text-align: center; margin-bottom: 5px; }
+        p { line-height: 1.6; margin-bottom: 20px; }
+        .quote { font-style: italic; border-left: 4px solid var(--primary); padding-left: 15px; margin: 25px 0; background: #fafafa; padding: 15px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="nav-bar">
+            <a href="/home">Home</a>
+            <a href="/courses">Courses/Skills</a>
+            <a href="/about" class="active">About Me</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <div class="content">
+            <h1>Driven by DevOps and Automation</h1>
+            
+            <div class="quote">
+                "This project is my living resume. It's not just theory; it's a demonstration of a full, production-ready workflow, from code testing to Kubernetes deployment."
+            </div>
+            
+            <p>
+                My next project steps involve leveraging **Terraform** for Infrastructure as Code (IaC) to provision the Kubernetes cluster itself, creating an end-to-end automation story.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

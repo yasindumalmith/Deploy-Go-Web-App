@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DevOps Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        :root {
+            --primary: #48bb78;
+            --secondary: #2d3748;
+            --background: #f7fafc;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background); margin: 0; padding: 0; color: #1a202c; }
+        .app-container { max-width: 800px; width: 95%; margin: 40px auto; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); overflow: hidden; border-top: 5px solid var(--primary); }
+        .nav-bar { display: flex; justify-content: space-around; background-color: var(--secondary); }
+        .nav-bar a { flex-grow: 1; padding: 15px 10px; text-decoration: none; color: white; font-weight: 700; text-align: center; transition: background-color 0.3s; }
+        .nav-bar a:hover:not(.active) { background-color: rgba(255, 255, 255, 0.15); }
+        .nav-bar a.active { background-color: var(--primary); color: var(--secondary); pointer-events: none; }
+        .content { padding: 40px; text-align: center; }
+        h1 { color: var(--primary); margin-bottom: 5px; }
+        p { line-height: 1.6; margin-bottom: 25px; }
+        .social-link { display: inline-block; margin: 0 15px; text-decoration: none; color: var(--secondary); font-weight: 700; padding: 10px 20px; border: 2px solid var(--primary); border-radius: 8px; transition: background-color 0.3s, color 0.3s; }
+        .social-link:hover { background-color: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="nav-bar">
+            <a href="/home">Home</a>
+            <a href="/courses">Courses/Skills</a>
+            <a href="/about">About Me</a>
+            <a href="/contact" class="active">Contact</a>
+        </div>
+
+        <div class="content">
+            <h1>Connect and Collaborate</h1>
+            <p>
+                I am actively seeking internship opportunities and eager to discuss cloud-native projects. Feel free to connect via the platforms below.
+            </p>
+
+            <!-- IMPORTANT: Replace these placeholders with your actual links -->
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">LinkedIn Profile</a>
+            <a href="https://github.com/yourusername/devops-app" target="_blank" class="social-link">Project GitHub Repo</a>
+        </div>
+    </div>
+</body>
+</html>

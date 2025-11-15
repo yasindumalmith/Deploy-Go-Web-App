@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | DevOps Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        :root {
+            --primary: #48bb78;
+            --secondary: #2d3748;
+            --background: #f7fafc;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background); margin: 0; padding: 0; color: #1a202c; }
+        .app-container { max-width: 800px; width: 95%; margin: 40px auto; background-color: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); overflow: hidden; border-top: 5px solid var(--primary); }
+        .nav-bar { display: flex; justify-content: space-around; background-color: var(--secondary); }
+        .nav-bar a { flex-grow: 1; padding: 15px 10px; text-decoration: none; color: white; font-weight: 700; text-align: center; transition: background-color 0.3s; }
+        .nav-bar a:hover:not(.active) { background-color: rgba(255, 255, 255, 0.15); }
+        .nav-bar a.active { background-color: var(--primary); color: var(--secondary); pointer-events: none; }
+        .content { padding: 40px; text-align: left; }
+        h1 { color: var(--primary); text-align: center; margin-bottom: 5px; }
+        h3 { color: var(--secondary); border-bottom: 2px solid #edf2f7; padding-bottom: 5px; margin-top: 25px; font-size: 1.1rem; }
+        ul { list-style: none; padding: 0; margin-top: 15px; }
+        li { background: #f7fafc; margin-bottom: 8px; padding: 10px 15px; border-left: 3px solid var(--primary); border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="nav-bar">
+            <a href="/home">Home</a>
+            <a href="/courses" class="active">Courses/Skills</a>
+            <a href="/about">About Me</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <div class="content">
+            <h1>My Core Skills and Tools</h1>
+            <h3>Containerization and Security (Docker, Distroless)</h3>
+            <ul>
+                <li>**Docker Multi-Stage Builds:** Utilizing a separate build environment (`golang:1.22`) and a minimal runtime environment (`gcr.io/distroless/base`) for maximum efficiency and security.</li>
+                <li>**Artifact Management:** Pushing verified images to a container registry (e.g., Docker Hub, AWS ECR).</li>
+            </ul>
+
+            <h3>Orchestration and Reliability (Kubernetes)</h3>
+            <ul>
+                <li>**Declarative Deployment:** Using YAML manifests to define desired state, including **Deployment** (scaling/replicas), **Service** (load balancing), and **Ingress** (external access).</li>
+                <li>**Health Checks:** Implementing **Liveness** and **Readiness Probes** to ensure zero-downtime deployments and self-healing.</li>
+            </ul>
+
+            <h3>Automation and Quality (CI/CD, Go Testing)</h3>
+            <ul>
+                <li>**Continuous Integration (CI):** Implementing automated testing (`go test` using `main_test.go`) to prevent deployment of broken code.</li>
+                <li>**Go Backend:** Experience writing simple, robust web services in Go for cloud-native performance.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
