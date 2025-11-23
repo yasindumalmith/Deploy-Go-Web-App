@@ -8,7 +8,7 @@ image:
   repository: yasindumalmith/go-web
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "19395489372"
+  tag: "19615157724"
 
 ingress:
   enabled: false
